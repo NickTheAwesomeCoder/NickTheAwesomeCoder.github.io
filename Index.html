@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Homepage.css" /> <!-- This links the CSS page to the HTML -->
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        NickBox
+    </title>
+</head>
+
+<body style="align-items: center;">
+    <!-- <center> -->
+        <h1>NickBox</h1>
+        <h2>Room Code</h2>
+        <input id="room code input"type="text"></input>
+        <br>
+        <button onclick="return1()">Join</button>
+        <script>
+            function return1()
+            {
+                var roomCodeInput = document.getElementById("room code input").value;
+                debugger;
+                if (roomCodeInput == "AAAA")
+                {
+                    window.location.href = 'JoinedPage.html';
+                }
+                else
+                {
+                    alert("Invalid Code");
+                }
+            }
+        </script>
+    <!-- </center> -->
+    <!-- <p>This is a paragraph! <b>And this is BOLD!</b></p> -->
+    <!-- <p>this phrase has a <b>bold</b> word in it</p> -->
+</body>
+</html>
